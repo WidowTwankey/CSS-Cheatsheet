@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--titlecolor: rgb(255, 148, 255);
+}
+
+#header {
+    color: var(--titlecolor);
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#subtitle {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    border: 2px solid white;
+    width: 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: inset 0px 0px 10px var(--titlecolor), 0px 0 30px var(--titlecolor);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 30px;
+    border: 10px;
+    border-radius: 25px;
+    background-image: linear-gradient(rgb(171, 1, 171), var(--titlecolor));
+}
+
+.card-header {
+    color: white;
+    font-size: 28px;
+    display: flex;
+}
+
+p {
+    color: var(--titlecolor);
+    padding: 5px 20px;
+}
+
+pre {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--titlecolor);
+    font-size: 22px;
+}
